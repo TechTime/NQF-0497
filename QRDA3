@@ -27,15 +27,15 @@
         <postalCode>83837</postalCode>
         <country>US</country>
       </addr>
-      <telecom value="tel:(208)784-1221" use="WP" />
+      <telecom value="tel:(208)784-7777" use="WP" />
       <assignedAuthoringDevice determinerCode="INSTANCE">
         <manufacturerModelName>STAT! HIS System</manufacturerModelName>
         <softwareName>Enterprise Medical Management</softwareName>
       </assignedAuthoringDevice>
       <representedOrganization classCode="ORG" determinerCode="INSTANCE">
         <id root="2.16.840.1.113883.4.6" extension="1043215437" />
-        <name>SHOSHONE MEDICAL CENTER</name>
-        <telecom value="tel:(208)784-1221" use="WP" />
+        <name>MEDICAL CENTER</name>
+        <telecom value="tel:(208)784-7777" use="WP" />
         <addr use="WP">
           <streetAddressLine>25 JACOBS GULCH</streetAddressLine>
           <city>KELLOGG</city>
@@ -50,8 +50,8 @@
     <assignedCustodian classCode="ASSIGNED">
       <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
         <id root="2.16.840.1.113883.4.6" extension="1043215437" />
-        <name>SHOSHONE MEDICAL CENTER</name>
-        <telecom value="tel:(208)784-1221" use="WP" />
+        <name>MEDICAL CENTER</name>
+        <telecom value="tel:(208)784-7777" use="WP" />
         <addr use="WP">
           <streetAddressLine>25 JACOBS GULCH</streetAddressLine>
           <city>KELLOGG</city>
@@ -69,8 +69,8 @@
       <id root="377cc3c7-d1a3-40ee-ab67-e3ddeea8af3d" />
       <representedOrganization classCode="ORG" determinerCode="INSTANCE">
         <id root="2.16.840.1.113883.4.6" extension="1043215437" />
-        <name>SHOSHONE MEDICAL CENTER</name>
-        <telecom value="tel:(208)784-1221" use="WP" />
+        <name>MEDICAL CENTER</name>
+        <telecom value="tel:(208)784-7777" use="WP" />
         <addr use="WP">
           <streetAddressLine>25 JACOBS GULCH</streetAddressLine>
           <city>KELLOGG</city>
@@ -162,7 +162,7 @@
                 <content styleCode="Bold">Initial Patient Population: 1</content>
                 <list>
                   <item>
-                    <content styleCode="Bold">Female: 1</content>
+                    <content styleCode="Bold">Male: 1</content>
                   </item>
                   <item>
                     <content styleCode="Bold">Not Hispanic or Latino: 1</content>
@@ -171,7 +171,7 @@
                     <content styleCode="Bold">White: 1</content>
                   </item>
                   <item>
-                    <content styleCode="Bold">ZipCode 83839: 1</content>
+                    <content styleCode="Bold">ZipCode 59105: 1</content>
                   </item>
                   <item>
                     <content styleCode="Bold">Payer Medicare: 1</content>
@@ -182,7 +182,7 @@
                 <content styleCode="Bold">Measure Population: 1</content>
                 <list>
                   <item>
-                    <content styleCode="Bold">Female: 1</content>
+                    <content styleCode="Bold">Male: 1</content>
                   </item>
                   <item>
                     <content styleCode="Bold">Not Hispanic or Latino: 1</content>
@@ -191,7 +191,7 @@
                     <content styleCode="Bold">White: 1</content>
                   </item>
                   <item>
-                    <content styleCode="Bold">ZipCode 83839: 1</content>
+                    <content styleCode="Bold">ZipCode 59105: 1</content>
                   </item>
                   <item>
                     <content styleCode="Bold">Payer Medicare: 1</content>
