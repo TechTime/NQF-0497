@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" moodCode="EVN" xmlns="urn:hl7-org:v3">
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.10.20.27.1.1" assigningAuthorityName="HL7/QRDA General Header" />
+  <id root="a2891b39-2b72-48e2-bf43-f21b5ea567b3" />
+  <code code="55184-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Quality Reporting Document Architecture Calculated Summary Report" />
+  <title>Quality Measures Inpatient Report</title>
+  <effectiveTime value="20141126105601-0700" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+  <languageCode code="en-US" />
+  <versionNumber value="1" />
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <patientRole classCode="PAT">
+      <id nullFlavor="NA" />
+      <patient classCode="PSN" determinerCode="INSTANCE" />
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT" contextControlCode="OP">
+    <time value="20141126105601-0700" />
+    <assignedAuthor classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.3.675" extension="QRDA reporter" />
+      <addr use="WP">
+        <streetAddressLine>25 JACOBS GULCH</streetAddressLine>
+        <city>KELLOGG</city>
+        <state>ID</state>
+        <postalCode>83837</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom value="tel:(208)784-1221" use="WP" />
+      <assignedAuthoringDevice determinerCode="INSTANCE">
+        <manufacturerModelName>STAT! HIS System</manufacturerModelName>
+        <softwareName>Enterprise Medical Management</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="2.16.840.1.113883.4.6" extension="1043215437" />
+        <name>SHOSHONE MEDICAL CENTER</name>
+        <telecom value="tel:(208)784-1221" use="WP" />
+        <addr use="WP">
+          <streetAddressLine>25 JACOBS GULCH</streetAddressLine>
+          <city>KELLOGG</city>
+          <state>ID</state>
+          <postalCode>83837</postalCode>
+          <country>US</country>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="2.16.840.1.113883.4.6" extension="1043215437" />
+        <name>SHOSHONE MEDICAL CENTER</name>
+        <telecom value="tel:(208)784-1221" use="WP" />
+        <addr use="WP">
+          <streetAddressLine>25 JACOBS GULCH</streetAddressLine>
+          <city>KELLOGG</city>
+          <state>ID</state>
+          <postalCode>83837</postalCode>
+          <country>US</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator typeCode="LA" contextControlCode="OP">
+    <time value="20141126105601-0700" />
+    <signatureCode code="S" />
+    <assignedEntity classCode="ASSIGNED">
+      <id root="377cc3c7-d1a3-40ee-ab67-e3ddeea8af3d" />
+      <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="2.16.840.1.113883.4.6" extension="1043215437" />
+        <name>SHOSHONE MEDICAL CENTER</name>
+        <telecom value="tel:(208)784-1221" use="WP" />
+        <addr use="WP">
+          <streetAddressLine>25 JACOBS GULCH</streetAddressLine>
+          <city>KELLOGG</city>
+          <state>ID</state>
+          <postalCode>83837</postalCode>
+          <country>US</country>
+        </addr>
+      </representedOrganization>
+    </assignedEntity>
+  </legalAuthenticator>
+  <participant typeCode="DEV" contextControlCode="OP">
+    <associatedEntity classCode="RGPR">
+      <id root="2.16.840.1.113883.3.2074.1" extension="12345" assigningAuthorityName="ONC" />
+      <code code="129465004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="medical record, device" />
+    </associatedEntity>
+  </participant>
+  <component>
+    <structuredBody classCode="DOCBODY" moodCode="EVN">
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.17.2.1" />
+          <templateId root="2.16.840.1.113883.10.20.27.2.2" />
+          <code code="55187-9" codeSystem="2.16.840.1.113883.6.1" />
+          <title>Reporting Parameters</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <list>
+              <item>Reporting Peroid: Wednesday, July 02, 2014 to Saturday, July 05, 2014</item>
+              <item>First Encounter : Wednesday, July 02, 2014</item>
+              <item>Last Encounter : Saturday, July 05, 2014</item>
+            </list>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.17.3.8" />
+              <id root="11a4e729-e86c-4761-bca6-6cac215db7d0" />
+              <code code="252116004" codeSystem="2.16.840.1.113883.6.96" displayName="Observation Parameters" />
+              <effectiveTime>
+                <low value="20140702" />
+                <high value="20140705" />
+              </effectiveTime>
+            </act>
+          </entry>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.17.3.8" />
+              <id root="11a4e729-e86c-4761-bca6-6cac215db7d0" />
+            </encounter>
+          </entry>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.17.3.8" />
+              <id root="11a4e729-e86c-4761-bca6-6cac215db7d0" />
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.27.2.1" />
+          <templateId root="2.16.840.1.113883.10.20.24.2.2" />
+          <code code="55186-1" codeSystem="2.16.840.1.113883.6.1" displayName="measure section" />
+          <title>Measure Section</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table width="100%" border="1">
+              <thead>
+                <tr>
+                  <th>eMeasure Title</th>
+                  <th>Version Neutral Identifier</th>
+                  <th>eMeasure Version Number</th>
+                  <th>NQF eMeasure Number</th>
+                  <th>eMeasure Identifier (MAT)</th>
+                  <th>Version Specific Identifier</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Median Admit Decision Time to ED Departure Time for Admitted Patients</td>
+                  <td>979f21bd-3f93-4cdd-8273-b23dfe9c0513</td>
+                  <td>2</td>
+                  <td>0497</td>
+                  <td>111</td>
+                  <td>40280381-3d27-5493-013d-4d8e4dc46570</td>
+                </tr>
+              </tbody>
+            </table>
+            <content>Member of Measure Set: Clinical Quality Measure Set 2014</content>
+            <list>
+              <item>
+                <content styleCode="Bold">Initial Patient Population: 1</content>
+                <list>
+                  <item>
+                    <content styleCode="Bold">Female: 1</content>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">Not Hispanic or Latino: 1</content>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">White: 1</content>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">ZipCode 83839: 1</content>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">Payer Medicare: 1</content>
+                  </item>
+                </list>
+              </item>
+              <item>
+                <content styleCode="Bold">Measure Population: 1</content>
+                <list>
+                  <item>
+                    <content styleCode="Bold">Female: 1</content>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">Not Hispanic or Latino: 1</content>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">White: 1</content>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">ZipCode 83839: 1</content>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">Payer Medicare: 1</content>
+                  </item>
+                </list>
+              </item>
+              <item>
+                <content styleCode="Bold">Stratified Counts</content>
+                <list>
+                  <item>
+                    <content styleCode="Bold">Reporting Stratum 1</content>
+                    <list>
+                      <item>
+                        <content styleCode="Bold">Initial Patient Population: 1</content>
+                      </item>
+                      <item>
+                        <content styleCode="Bold">Measure Population: 1</content>
+                      </item>
+                    </list>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">Reporting Stratum 2</content>
+                    <list>
+                      <item>
+                        <content styleCode="Bold">Initial Patient Population: 1</content>
+                      </item>
+                      <item>
+                        <content styleCode="Bold">Measure Population: 1</content>
+                      </item>
+                    </list>
+                  </item>
+                  <item>
+                    <content styleCode="Bold">Reporting Stratum 3</content>
+                    <list>
+                      <item>
+                        <content styleCode="Bold">Initial Patient Population: 0</content>
+                      </item>
+                      <item>
+                        <content styleCode="Bold">Measure Population: 0</content>
+                      </item>
+                    </list>
+                  </item>
+                </list>
+              </item>
+            </list>
+          </text>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.27.3.1" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3d27-5493-013d-4d8e4dc46570" />
+                  <id root="2.16.840.1.113883.3.560.1" extension="0497" />
+                  <code code="57024-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health Quality Measure Document" />
+                  <text>Median Admit Decision Time to ED Departure Time for Admitted Patients</text>
+                  <setId root="979f21bd-3f93-4cdd-8273-b23dfe9c0513" />
+                  <versionNumber value="2" />
+                </externalDocument>
+              </reference>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.27.3.5" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Assertion" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="IPP" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="ObservationValue" displayName="initial patient population" />
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                      <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                      <value xsi:type="INT" value="1" />
+                      <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.4" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" displayName="Assertion" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" nullFlavor="OTH">
+                        <originalText>Stratum</originalText>
+                      </value>
+                      <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.2" />
+                          <code nullFlavor="OTH" />
+                          <statusCode code="completed" />
+                          <value xsi:type="PQ" value="0" unit="min" />
+                          <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                          <reference typeCode="REFR">
+                            <externalObservation moodCode="EVN">
+                              <id root="25dc8a92-8952-4a1a-9f46-ea53316b3400" />
+                            </externalObservation>
+                          </reference>
+                        </observation>
+                      </entryRelationship>
+                      <reference typeCode="REFR">
+                        <externalObservation moodCode="EVN">
+                          <id root="9C2316BF-B541-4367-9C32-3F39E80AF231" />
+                        </externalObservation>
+                      </reference>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.4" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" displayName="Assertion" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" nullFlavor="OTH">
+                        <originalText>Stratum</originalText>
+                      </value>
+                      <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.2" />
+                          <code nullFlavor="OTH" />
+                          <statusCode code="completed" />
+                          <value xsi:type="PQ" value="0" unit="min" />
+                          <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                          <reference typeCode="REFR">
+                            <externalObservation moodCode="EVN">
+                              <id root="25dc8a92-8952-4a1a-9f46-ea53316b3400" />
+                            </externalObservation>
+                          </reference>
+                        </observation>
+                      </entryRelationship>
+                      <reference typeCode="REFR">
+                        <externalObservation moodCode="EVN">
+                          <id root="0D3CFE48-605A-4725-A01E-005D529313B5" />
+                        </externalObservation>
+                      </reference>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.4" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" displayName="Assertion" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" nullFlavor="OTH">
+                        <originalText>Stratum</originalText>
+                      </value>
+                      <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="0" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.2" />
+                          <code nullFlavor="OTH" />
+                          <statusCode code="completed" />
+                          <value xsi:type="PQ" value="0" unit="min" />
+                          <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                          <reference typeCode="REFR">
+                            <externalObservation moodCode="EVN">
+                              <id root="25dc8a92-8952-4a1a-9f46-ea53316b3400" />
+                            </externalObservation>
+                          </reference>
+                        </observation>
+                      </entryRelationship>
+                      <reference typeCode="REFR">
+                        <externalObservation moodCode="EVN">
+                          <id root="AD7661A3-3B03-4BA3-8087-36D69411DACD" />
+                        </externalObservation>
+                      </reference>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.6" />
+                      <code code="184100006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="patient sex" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7AdministrativeGenderCode" displayName="Female" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.8" />
+                      <code code="103579009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Race" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="2131-1" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race Ethnicity - CDC" displayName="White" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.7" />
+                      <code code="364699009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ethnic Group" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race Ethnicity - CDC" displayName="Not Hispanic or Latino" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.9" />
+                      <templateId />
+                      <id nullFlavor="NA" />
+                      <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Source" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="1" codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology" displayName="Medicare" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.10" />
+                      <code code="184102003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="patient postal code" />
+                      <statusCode code="completed" />
+                      <value xsi:type="ST">83839</value>
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <reference typeCode="REFR">
+                    <externalObservation moodCode="EVN">
+                      <id root="5F8D6159-0934-4C4F-9841-429861D46351" />
+                    </externalObservation>
+                  </reference>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.27.3.5" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Assertion" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="MSRPOPL" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="ObservationValue" displayName="measure population" />
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                      <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                      <value xsi:type="INT" value="1" />
+                      <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.2" />
+                      <code nullFlavor="OTH" />
+                      <statusCode code="completed" />
+                      <value xsi:type="PQ" value="0" unit="min" />
+                      <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                      <reference typeCode="REFR">
+                        <externalObservation moodCode="EVN">
+                          <id root="25dc8a92-8952-4a1a-9f46-ea53316b3400" />
+                        </externalObservation>
+                      </reference>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.4" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" displayName="Assertion" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" nullFlavor="OTH">
+                        <originalText>Stratum</originalText>
+                      </value>
+                      <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.2" />
+                          <code nullFlavor="OTH" />
+                          <statusCode code="completed" />
+                          <value xsi:type="PQ" value="0" unit="min" />
+                          <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                          <reference typeCode="REFR">
+                            <externalObservation moodCode="EVN">
+                              <id root="25dc8a92-8952-4a1a-9f46-ea53316b3400" />
+                            </externalObservation>
+                          </reference>
+                        </observation>
+                      </entryRelationship>
+                      <reference typeCode="REFR">
+                        <externalObservation moodCode="EVN">
+                          <id root="9C2316BF-B541-4367-9C32-3F39E80AF231" />
+                        </externalObservation>
+                      </reference>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.4" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" displayName="Assertion" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" nullFlavor="OTH">
+                        <originalText>Stratum</originalText>
+                      </value>
+                      <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.2" />
+                          <code nullFlavor="OTH" />
+                          <statusCode code="completed" />
+                          <value xsi:type="PQ" value="0" unit="min" />
+                          <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                          <reference typeCode="REFR">
+                            <externalObservation moodCode="EVN">
+                              <id root="25dc8a92-8952-4a1a-9f46-ea53316b3400" />
+                            </externalObservation>
+                          </reference>
+                        </observation>
+                      </entryRelationship>
+                      <reference typeCode="REFR">
+                        <externalObservation moodCode="EVN">
+                          <id root="0D3CFE48-605A-4725-A01E-005D529313B5" />
+                        </externalObservation>
+                      </reference>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.4" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" displayName="Assertion" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" nullFlavor="OTH">
+                        <originalText>Stratum</originalText>
+                      </value>
+                      <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="0" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.2" />
+                          <code nullFlavor="OTH" />
+                          <statusCode code="completed" />
+                          <value xsi:type="PQ" value="0" unit="min" />
+                          <methodCode code="MEDIAN" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Median" />
+                          <reference typeCode="REFR">
+                            <externalObservation moodCode="EVN">
+                              <id root="25dc8a92-8952-4a1a-9f46-ea53316b3400" />
+                            </externalObservation>
+                          </reference>
+                        </observation>
+                      </entryRelationship>
+                      <reference typeCode="REFR">
+                        <externalObservation moodCode="EVN">
+                          <id root="AD7661A3-3B03-4BA3-8087-36D69411DACD" />
+                        </externalObservation>
+                      </reference>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.6" />
+                      <code code="184100006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="patient sex" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7AdministrativeGenderCode" displayName="Female" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.8" />
+                      <code code="103579009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Race" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="2131-1" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race Ethnicity - CDC" displayName="White" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.7" />
+                      <code code="364699009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Ethnic Group" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race Ethnicity - CDC" displayName="Not Hispanic or Latino" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.9" />
+                      <templateId />
+                      <id nullFlavor="NA" />
+                      <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Source" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="1" codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology" displayName="Medicare" />
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="COMP">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.27.3.10" />
+                      <code code="184102003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="patient postal code" />
+                      <statusCode code="completed" />
+                      <value xsi:type="ST">83839</value>
+                      <entryRelationship typeCode="SUBJ" inversionInd="true">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <templateId root="2.16.840.1.113883.10.20.27.3.3" />
+                          <code code="MSRAGG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="rate aggregation" />
+                          <value xsi:type="INT" value="1" />
+                          <methodCode code="COUNT" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="count" />
+                        </observation>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                  <reference typeCode="REFR">
+                    <externalObservation moodCode="EVN">
+                      <id root="F6CE96D2-66C9-4B33-A230-FBC2AA287F35" />
+                    </externalObservation>
+                  </reference>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
